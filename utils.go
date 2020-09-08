@@ -10,3 +10,13 @@ func Contains(a []string, x string) bool {
 	}
 	return false
 }
+
+// ContainsInt checks if int `x` contained in `a` slice
+func ContainsInt(a []int, x int) bool {
+	for _, n := range a {
+		if x == n {
+			return true
+		}
+	}
+	return false
+}
